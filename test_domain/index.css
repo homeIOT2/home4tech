@@ -1,0 +1,140 @@
+body{
+background-color: rgb(180, 166, 241);
+transition: .5s;
+font-family: lato;
+width: 100%;
+height: 100%;
+}
+
+.container{
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+}
+
+.box{
+  width:405px;
+  margin: 20px;
+  padding: 3px;
+  overflow: hidden;
+  height: fit-content;
+  border: 1px rgba(0, 0, 0, 0.034) solid;
+  box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.box-1{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px 10px;
+  background-color: rgb(230, 221, 238);
+}
+
+.box-2{
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 10px 10px;
+  background-color: rgb(230, 221, 238);
+}
+
+.box-2.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.little-box{
+  width:200px;
+  height: 180px;
+  margin: 1px;
+  box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.little-box:hover,.little-box:focus{
+  box-shadow: 6px 6px 30px 0px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+cursor: pointer;
+}
+.push{
+ margin-top: 30px
+}
+.minus-band{
+  margin-top: -300px
+}
+
+.head{
+width: 100%;
+display: flex;
+margin-bottom: 10px;
+justify-content: center;
+border-bottom: 1px solid rgba(0,0,0,0.1)
+
+}
+.text{
+  text-align: center;
+  width: 450px
+}
+.ico,.icon{
+  width:30px;
+  height: 30px;
+  margin-top:15px
+}
+.first-text{
+  font-size: 10px
+}
+.svg-pic{
+  max-width: 40px;
+  margin-left: 80px
+}
+
+/* Css For The Modal */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close, .closed {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close,.closed:hover,
+.close,.closed:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.svg-1:hover{
+  fill:red;
+  transition: .3s
+}
